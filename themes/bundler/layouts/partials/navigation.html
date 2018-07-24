@@ -1,0 +1,26 @@
+{{ $currentPage := . }}
+
+<div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light mb-5">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto mr-auto">
+
+                {{ range .Site.Menus.main }}
+                    <li class="nav-item">
+                        <a class="nav-link sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+                    </li>
+                {{ end }}
+
+                </ul>
+
+            </div>
+
+       
+    </nav>
+</div>

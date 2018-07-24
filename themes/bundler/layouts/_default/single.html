@@ -1,0 +1,32 @@
+{{ define "main" }}
+    <div class="row">
+
+        <div class="col-15 col-md-10 offset-md-1 order-2">
+            
+            <article class="post">
+
+                <header class="mb-4">
+
+                    <h1 class="title-single d-inline-block mb-3">{{ .Title }}</h1>
+
+                </header>
+
+                <div class="row">
+                    <div class="post-content col-15 col-md-11">
+                        {{ .Content }}
+                    </div>
+                </div>
+                
+            </article>
+
+            {{ template "_internal/disqus.html" . }}
+
+        </div>
+
+
+        {{ partial "sidebar.html" . }} 
+
+                
+    </div>
+
+{{ end }}

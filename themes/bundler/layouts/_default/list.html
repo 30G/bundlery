@@ -1,0 +1,25 @@
+{{ define "main" }}
+    <div class="row">
+
+        <div class="col-15 col-md-10 offset-md-1 order-2">
+
+            <h1 class="list-title text-center text-black-50 mt-3 mb-5 pb-3">{{ .Name }}</h1>
+            
+            <div class="list-group">
+
+                {{ range .Paginator.Pages }}
+                    
+                    {{ partial "post-list-item.html" . }}
+                         
+                {{ end }}
+
+            </div>
+
+            {{ template "_internal/pagination.html" . }}
+
+        </div>
+
+        {{ partial "sidebar.html" . }}
+        
+    </div>
+{{ end }}

@@ -1,0 +1,21 @@
+<article class="post mb-5 pb-4">
+
+    <header class="mb-3">
+
+        <h2 class="post-title d-inline-block">
+
+            <a href="{{ .Permalink }}" class="text-body">{{ .Title }}</a>
+
+        </h2>
+
+    </header>
+      
+    <div class="row">
+        <div class="col-15 col-md-11 excerpt post-content text-secondary"> 
+            {{ delimit .PlainWords " " | truncate 150 }}
+        </div>
+            
+    </div>
+
+    
+</article>

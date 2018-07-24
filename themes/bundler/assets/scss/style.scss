@@ -1,0 +1,42 @@
+// Variable overrides
+
+$grid-columns:                15;
+$navbar-padding-x:            0;
+$line-height-lg:              1.5;
+
+
+// All
+@import '../bootstrap/bootstrap';
+
+
+// Required
+
+
+// Optional
+
+
+// Custom / additional SCSS
+
+.navbar, .post, .list-title {
+	border-bottom: 1px solid $hr-border-color;
+}
+footer {
+	border-top: 1px solid $hr-border-color;
+}
+
+.post .post-content {
+	line-height: 1.75;
+}
+
+.post-content img, .sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+
+.post .excerpt {
+	padding-bottom: 1rem;
+}
+
+.sidebar h3, .sidebar img {
+	margin-bottom: 0.75rem;
+}

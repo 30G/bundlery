@@ -1,0 +1,18 @@
+<section class="sidebar col-15 col-md-4 order-1 mb-5">
+
+   	{{ with .Site.GetPage "/sidebar/index.md" }}
+
+   		<aside class="mt-4">
+
+			{{ if eq .Params.showTitle true }}
+				<h3>{{ .Title }}</h3>
+			{{ end }}
+
+			{{ .Content }}
+
+		</aside>
+
+   	{{ end }}
+
+    	
+</section>

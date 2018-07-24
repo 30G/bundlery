@@ -1,0 +1,44 @@
+baseURL = "http://statix.io/"
+languageCode = "en-us"
+title = "Bundlery"
+theme = "bundler"
+
+MetaDataFormat = "yaml"
+DefaultContentLanguage = "en"
+enableRobotsTXT = true
+# SectionPagesMenu = "main"
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+googleAnalytics = ""
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+[params]
+  # favicon = ""
+  description = "Test site to demonstrate a problem"
+
+
+[menu]
+
+  [[menu.main]]  
+    name = "Home"
+    title = ""
+    weight = -100
+    identifier = "/"
+    url = "/"
+
+  [[menu.main]]  
+    name = "Articles"
+    title = "All articles at one place"
+    weight = -90
+    identifier = "articles"
+    url = "/articles/"
+
+  [[menu.main]]  
+    name = "A single one"
+    title = ""
+    weight = -80
+    identifier = "articles/an-article"
+    url = "/articles/an-article"
