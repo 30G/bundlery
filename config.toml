@@ -37,8 +37,15 @@ googleAnalytics = ""
     url = "/articles/"
 
   [[menu.main]]  
+    name = "Sidebar"
+    title = "All sidebar content at one place"
+    weight = -80
+    identifier = "sidebar"
+    url = "/sidebar/"
+
+  [[menu.main]]  
     name = "A single one"
     title = ""
-    weight = -80
+    weight = -70
     identifier = "articles/an-article"
     url = "/articles/an-article"
